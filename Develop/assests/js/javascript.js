@@ -1,5 +1,5 @@
 
-var todaysDate = moment().format('dddd, MMM Do YYYY');
+let todaysDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDate").html(todaysDate);
 
 
@@ -34,4 +34,15 @@ $(document).ready(function () {
     }
 
     //localstorage code
-})
+    $("#hr9am .description").val(localStorage.getItem("hr9am"));
+    $("#hr10am .description").val(localStorage.getItem("hr10am"));
+    $("#hr11am .description").val(localStorage.getItem("hr11am"));
+    $("#hr12pm .description").val(localStorage.getItem("hr12pm"));
+    $("#hr1pm .description").val(localStorage.getItem("hr1pm"));
+    $("#hr2pm .description").val(localStorage.getItem("hr2pm"));
+    $("#hr3pm .description").val(localStorage.getItem("hr3pm"));
+    $("#hr4pm .description").val(localStorage.getItem("hr4pm"));
+    $("#hr5pm .description").val(localStorage.getItem("hr5pm"));
+
+    timer();
+});
